@@ -1,4 +1,4 @@
-   **"Red Belt" Capstone Project Instructions**
+# "Red Belt" Capstone Project Instructions
    
 It would be strange teaching you on Yandex course and do not ask to develop your own search engine.
 In the final project of the "Red Belt" we will do just that :)
@@ -9,7 +9,6 @@ class SearchServer {
 public:
   SearchServer() = default;
   explicit SearchServer(istream& document_input);
-
   void UpdateDocumentBase(istream& document_input);
   void AddQueriesStream(istream& query_input, ostream& search_results_output);
 };
@@ -17,7 +16,7 @@ public:
 
 Let's consider its interface.
 
-**Constructor**
+### Constructor
 
 The constructor for the ```SearchServer``` class accepts an input stream containing a document database. 
 
@@ -38,7 +37,7 @@ istringstream document_input(docs);
 SearchServer srv(document_input);
 ```
 
-**Method ```AddQueriesStream(istream& query_input, ostream& search_results_output)```**
+### Method ```AddQueriesStream(istream& query_input, ostream& search_results_output)```
 
 The method ```AddQueriesStream``` does the actual search. It accepts an input stream for search queries and an output stream for writing search results. 
 
@@ -75,7 +74,7 @@ metric value for this document (that is, the total number of occurrences of all 
   - There is no need to add documents with zero ```hitcount``` to search results
   - when calculating ```hitcount```, only whole words need to be taken into account, that is, the word "there" is not an occurrence of the word "the"
 
-**Method ```UpdateDocumentBase(istream& document_input)```**
+### Method ```UpdateDocumentBase(istream& document_input)```
 
 The method ```UpdateDocumentBase``` replaces the current document database with the new one contained in the ```document_input``` stream.
 In this case, the document from the first line of this stream will have an identifier (```docid```) 0, a document from the second line - identifier 1, etc.
@@ -104,7 +103,7 @@ the capital: {docid: 1, hitcount: 3} {docid: 0, hitcount: 2}
 the capital: {docid: 0, hitcount: 3} {docid: 1, hitcount: 2}
 ```
 
-**The first part:**
+### The first part:
 
 This task has two parts. In the first part, you are given the correct implementation of the ```SearchServer``` class which is not fast enough. You need to find and 
 eliminate bottlenecks in its implementation. You need to submit a ```cpp``` file or an archive of several source files to the testing system, containing your accelerated 
@@ -136,7 +135,7 @@ See the unit tests in the solution template for a more detailed explanation of h
 course_project_first_part.zip
 ```
 
-**Second part of the task:**
+### Second part of the task:
 
 In this part, we will simulate the operation of a web server that simultaneously processes several streams of search queries, as well as updates to the document database. 
 Your implementation will be tested like this:
