@@ -1,3 +1,7 @@
+/* SearchServer.cpp : https://www.coursera.org/ C++ Development Fundamentals: Red Belt, Week 6. Capstone Project
+Programming Assignment: Search Engine
+*/
+
 /* SearchServer.cpp : https://www.coursera.org/ Основы разработки на C++: красный пояс, Неделя 6. Финальная задача
 Задание по программированию: Поисковая система
 */
