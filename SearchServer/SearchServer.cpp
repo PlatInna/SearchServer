@@ -1,5 +1,9 @@
-/* SearchServer.cpp : https://www.coursera.org/ Основы разработки на C++: красный пояс, Неделя 6. Финальная задача
-Задание по программированию: Поисковая система
+/* SearchServer.cpp : https://www.coursera.org/ C++ Development Fundamentals: Red Belt, Week 6. Capstone Project
+Programming Assignment: Search Engine
+*/
+
+/* SearchServer.cpp : https://www.coursera.org/ ГЋГ±Г­Г®ГўГ» Г°Г Г§Г°Г ГЎГ®ГІГЄГЁ Г­Г  C++: ГЄГ°Г Г±Г­Г»Г© ГЇГ®ГїГ±, ГЌГҐГ¤ГҐГ«Гї 6. Г”ГЁГ­Г Г«ГјГ­Г Гї Г§Г Г¤Г Г·Г 
+Г‡Г Г¤Г Г­ГЁГҐ ГЇГ® ГЇГ°Г®ГЈГ°Г Г¬Г¬ГЁГ°Г®ГўГ Г­ГЁГѕ: ГЏГ®ГЁГ±ГЄГ®ГўГ Гї Г±ГЁГ±ГІГҐГ¬Г 
 */
 
 #include "search_server.h"
@@ -85,7 +89,7 @@ void SearchServer::UpdateDocumentBase(istream& document_input) {
     //swap(index.GetAccess().ref_to_value, new_index);
     //index.GetAccess().ref_to_value = move(new_index);
 
-    //index = move(new_index); // последовательно без обертки Synchronized<InvertedIndex>;
+    //index = move(new_index); // ГЇГ®Г±Г«ГҐГ¤Г®ГўГ ГІГҐГ«ГјГ­Г® ГЎГҐГ§ Г®ГЎГҐГ°ГІГЄГЁ Synchronized<InvertedIndex>;
 }
 
 //void SearchServer::AddQueriesSinglTread(istream& query_input, ostream& search_results_output) {
