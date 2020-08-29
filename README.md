@@ -1,6 +1,6 @@
 "Red Belt" Capstone Project Instructions
 
-It would be strange to learn Yandex course and do not ask you to develop your own search engine.
+It would be strange teaching you on Yandex course and do not ask to develop your own search engine.
 In the final project of the "Red Belt" we will do just that :)
 In this task, you need to work with the SearchServer class, which allows you to search in the document database:
 
