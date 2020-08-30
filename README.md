@@ -131,9 +131,9 @@ Unlike performance testing, when testing for the integrity and correctness of th
 including from an already created and initialized object of the ```SearchServer``` class.
 See the unit tests in the solution template for a more detailed explanation of how the ```SearchServer``` class should work.
 
-```
-course_project_first_part.zip
-```
+
+[course_project_first_part.zip](https://github.com/PlatInna/SearchServer/blob/master/SearchServer/course_project_first_part.zip)
+
 
 ### Second part of the task:
 
