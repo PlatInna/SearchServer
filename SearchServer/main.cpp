@@ -205,10 +205,6 @@ void TestBasicSearch() {
   TestFunctionality(docs, queries, expected);
 }
 void TestSearchServer(vector<pair<istream, ostream*>> streams) {
-    // IteratorRange Ч шаблон из задачи Paginator
-    // random_time() Ч функци€, котора€ возвращает случайный
-    // промежуток времени
-
     LOG_DURATION("Total");
     SearchServer srv(streams.front().first);
     for (auto& [input, output] :
@@ -258,7 +254,7 @@ int main() {
           words.push_back(word);
           word = "";
       }
-      for (int c = 0; c < 200; ++c) { // формируем базу документов 
+      for (int c = 0; c < 200; ++c) { 
           int i_cycle = words_qty_in_doc(gen);
           for (int i = 1; i <= i_cycle; ++i) {
               doc += words[word_in_words(gen)];
@@ -269,7 +265,7 @@ int main() {
           docs.push_back(doc);
           doc = "";
       }
-      for (int q = 0; q < 5000; ++q) { // формируем базу запросов
+      for (int q = 0; q < 5000; ++q) { 
           int i_cycle = words_qty_in_queries(gen);
           for (int i = 1; i <= i_cycle; ++i) {
               querie += words[word_in_words(gen)];
@@ -297,14 +293,6 @@ int main() {
         LOG_DURATION("AddQueriesStream");
         srv.AddQueriesStream(queries_input, queries_output);
     }
-    
-  //istringstream docs_input("x x x y y y\nx y z z z\ny y z z\nx x y y y y\nx y z\nx x x x\nx\ny\nz\nx y\nx z\nx y z\n");
-  //SearchServer srv1;
-  //srv1.UpdateDocumentBase(docs_input);
-  //istringstream queries_input("x\ny\nz\nx y\nx z\nx y z\n");
-  //srv1.AddQueriesStream(queries_input, cout);
-  //*/
-    //srv.~SearchServer();
-    return 0;
 
+    return 0;
 }
