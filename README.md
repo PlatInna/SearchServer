@@ -1,12 +1,14 @@
 # Capstone Project of the Coursera course 
 # "C++ Development Fundamentals: Red Belt"
+by Moscow Institute of Physics and Technology, Yandex & E-Learning Development Fund offered on Coursera
+
 ![Coursera loga](https://github.com/PlatInna/SearchServer/blob/master/coursera_logo.PNG)
 ![Course logos](https://github.com/PlatInna/SearchServer/blob/master/logos.PNG)
 
 # Instructions
    
 It would be strange teaching you on Yandex course and do not ask to develop your own search engine.
-In the final project of the "Red Belt" we will do just that :)
+In the final project of the "Red Belt" we will do just that :smile:
 In this task, you need to work with the ```SearchServer``` class, which allows you to search in the document database:
 
 ```c++
@@ -76,8 +78,8 @@ metric value for this document (that is, the total number of occurrences of all 
 
 **Two important notes:**
 
-  - There is no need to add documents with zero ```hitcount``` to search results
-  - when calculating ```hitcount```, only whole words need to be taken into account, that is, the word "there" is not an occurrence of the word "the"
+  1. There is no need to add documents with zero ```hitcount``` to search results
+  2. When calculating ```hitcount```, only whole words need to be taken into account, that is, the word "there" is not an occurrence of the word "the"
 
 #### Method ```UpdateDocumentBase(istream& document_input)```
 
@@ -170,3 +172,5 @@ once a day. Updating the database can take a significant amount of time, so the 
 to the second part of the problem should take this into account.
   - The method ```AddQueriesStream``` must be prepared to execute in parallel with the method ```UpdateDocumentBase```, and vice versa.
   - The ```AddQueriesStream``` method is not required to process all queries with the version of the document database that was current when it was run. That is, if the document database has been updated while the ```AddQueriesStream``` method is running, it can use the new version of the database to process the remaining requests.
+  
+###### Not official translation by @PlatInna
