@@ -2,7 +2,8 @@
 # ["C++ Development Fundamentals: Red Belt"](https://www.coursera.org/learn/c-plus-plus-red?specialization=c-plus-plus-modern-development)
 by [Moscow Institute of Physics and Technology](https://en.wikipedia.org/wiki/Moscow_Institute_of_Physics_and_Technology), [Yandex](https://en.wikipedia.org/wiki/Yandex) & [E-Learning Development Fund](https://www.coursera.org/eldf) offered on [Coursera](https://en.wikipedia.org/wiki/Coursera)
 
-![Course logos](https://github.com/PlatInna/SearchServer/blob/master/logos1.PNG)
+![Course logo](https://github.com/PlatInna/SearchServer/blob/master/coursera_logo.PNG)
+![Other logos](https://github.com/PlatInna/SearchServer/blob/master/logos.PNG)
 
 # Instructions
    
