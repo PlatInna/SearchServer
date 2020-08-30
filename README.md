@@ -1,4 +1,9 @@
-# "Red Belt" Capstone Project Instructions
+# Capstone Project of the Coursera course 
+# "C++ Development Fundamentals: Red Belt"
+![Coursera loga](https://github.com/PlatInna/SearchServer/blob/master/coursera_logo.PNG)
+![Course logos](https://github.com/PlatInna/SearchServer/blob/master/logos.PNG)
+
+# Instructions
    
 It would be strange teaching you on Yandex course and do not ask to develop your own search engine.
 In the final project of the "Red Belt" we will do just that :)
@@ -16,7 +21,7 @@ public:
 
 Let's consider its interface.
 
-### Constructor
+#### Constructor
 
 The constructor for the ```SearchServer``` class accepts an input stream containing a document database. 
 
@@ -37,7 +42,7 @@ istringstream document_input(docs);
 SearchServer srv(document_input);
 ```
 
-### Method ```AddQueriesStream(istream& query_input, ostream& search_results_output)```
+#### Method ```AddQueriesStream(istream& query_input, ostream& search_results_output)```
 
 The method ```AddQueriesStream``` does the actual search. It accepts an input stream for search queries and an output stream for writing search results. 
 
@@ -74,7 +79,7 @@ metric value for this document (that is, the total number of occurrences of all 
   - There is no need to add documents with zero ```hitcount``` to search results
   - when calculating ```hitcount```, only whole words need to be taken into account, that is, the word "there" is not an occurrence of the word "the"
 
-### Method ```UpdateDocumentBase(istream& document_input)```
+#### Method ```UpdateDocumentBase(istream& document_input)```
 
 The method ```UpdateDocumentBase``` replaces the current document database with the new one contained in the ```document_input``` stream.
 In this case, the document from the first line of this stream will have an identifier (```docid```) 0, a document from the second line - identifier 1, etc.
