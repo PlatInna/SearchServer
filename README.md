@@ -1,7 +1,14 @@
-# "Red Belt" Capstone Project Instructions
+# Capstone Project of the online-course on [Coursera](https://www.coursera.org/)
+# ["C++ Development Fundamentals: Red Belt"](https://www.coursera.org/learn/c-plus-plus-red?specialization=c-plus-plus-modern-development)
+by [Moscow Institute of Physics and Technology](https://en.wikipedia.org/wiki/Moscow_Institute_of_Physics_and_Technology), [Yandex](https://en.wikipedia.org/wiki/Yandex) & [E-Learning Development Fund](https://www.coursera.org/eldf) offered on [Coursera](https://en.wikipedia.org/wiki/Coursera)
+
+![Coursera loga](https://github.com/PlatInna/SearchServer/blob/master/coursera_logo.PNG)
+![Course logos](https://github.com/PlatInna/SearchServer/blob/master/logos.PNG)
+
+# Instructions
    
 It would be strange teaching you on Yandex course and do not ask to develop your own search engine.
-In the final project of the "Red Belt" we will do just that :)
+In the final project of the "Red Belt" we will do just that :smile:
 In this task, you need to work with the ```SearchServer``` class, which allows you to search in the document database:
 
 ```c++
@@ -16,7 +23,7 @@ public:
 
 Let's consider its interface.
 
-### Constructor
+#### Constructor
 
 The constructor for the ```SearchServer``` class accepts an input stream containing a document database. 
 
@@ -37,7 +44,7 @@ istringstream document_input(docs);
 SearchServer srv(document_input);
 ```
 
-### Method ```AddQueriesStream(istream& query_input, ostream& search_results_output)```
+#### Method ```AddQueriesStream(istream& query_input, ostream& search_results_output)```
 
 The method ```AddQueriesStream``` does the actual search. It accepts an input stream for search queries and an output stream for writing search results. 
 
@@ -71,10 +78,10 @@ metric value for this document (that is, the total number of occurrences of all 
 
 **Two important notes:**
 
-  - There is no need to add documents with zero ```hitcount``` to search results
-  - when calculating ```hitcount```, only whole words need to be taken into account, that is, the word "there" is not an occurrence of the word "the"
+  1. There is no need to add documents with zero ```hitcount``` to search results
+  2. When calculating ```hitcount```, only whole words need to be taken into account, that is, the word "there" is not an occurrence of the word "the"
 
-### Method ```UpdateDocumentBase(istream& document_input)```
+#### Method ```UpdateDocumentBase(istream& document_input)```
 
 The method ```UpdateDocumentBase``` replaces the current document database with the new one contained in the ```document_input``` stream.
 In this case, the document from the first line of this stream will have an identifier (```docid```) 0, a document from the second line - identifier 1, etc.
@@ -165,3 +172,5 @@ once a day. Updating the database can take a significant amount of time, so the 
 to the second part of the problem should take this into account.
   - The method ```AddQueriesStream``` must be prepared to execute in parallel with the method ```UpdateDocumentBase```, and vice versa.
   - The ```AddQueriesStream``` method is not required to process all queries with the version of the document database that was current when it was run. That is, if the document database has been updated while the ```AddQueriesStream``` method is running, it can use the new version of the database to process the remaining requests.
+  
+###### Not official translation by @PlatInna
