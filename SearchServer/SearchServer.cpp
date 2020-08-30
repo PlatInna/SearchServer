@@ -2,10 +2,6 @@
 Programming Assignment: Search Engine
 */
 
-/* SearchServer.cpp : https://www.coursera.org/ Основы разработки на C++: красный пояс, Неделя 6. Финальная задача
-Задание по программированию: Поисковая система
-*/
-
 #include "search_server.h"
 #include "iterator_range.h"
 
@@ -89,7 +85,7 @@ void SearchServer::UpdateDocumentBase(istream& document_input) {
     //swap(index.GetAccess().ref_to_value, new_index);
     //index.GetAccess().ref_to_value = move(new_index);
 
-    //index = move(new_index); // последовательно без обертки Synchronized<InvertedIndex>;
+    //index = move(new_index); // sequentially without wrapper Synchronized<InvertedIndex>;
 }
 
 //void SearchServer::AddQueriesSinglTread(istream& query_input, ostream& search_results_output) {
