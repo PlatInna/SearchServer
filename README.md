@@ -141,7 +141,7 @@ See the unit tests in the solution template for a more detailed explanation of h
 [course_project_first_part.zip](https://github.com/PlatInna/SearchServer/blob/master/SearchServer/course_project_first_part.zip)
 
 
-### Second part of the task:
+### The second part :
 
 In this part, we will simulate the operation of a web server that simultaneously processes several streams of search queries, as well as updates to the document database. 
 Your implementation will be tested like this:
