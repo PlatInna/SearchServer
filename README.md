@@ -4,6 +4,9 @@ by [Moscow Institute of Physics and Technology](https://en.wikipedia.org/wiki/Mo
 
 ![Logos](https://github.com/PlatInna/SearchServer/blob/master/logos.PNG)
 
+
+###### Not official translation of project assignment by @PlatInna
+
 # Instructions
    
 It would be strange teaching you on Yandex course and do not ask to develop your own search engine.
